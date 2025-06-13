@@ -1,0 +1,11 @@
+header, footer {
+    background: rgb(114, 175, 114);
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background: lightblue;
+    gap: 20px;
+}
