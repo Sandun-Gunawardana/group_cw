@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Volunteer - Climate Action Now</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .card-container {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .card {
+      flex: 0 0 250px;
+      background: white;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .card button {
+      margin-top: 0.5rem;
+      padding: 0.5rem;
+      background: #1abc9c;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background: #16a085;
+    }
+
+    .dropdown {
+      margin-bottom: 1rem;
+    }
+
+    .reviews, .feedback-form {
+      margin-top: 2rem;
+    }
+
+    .review-card {
+      background: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #1abc9c;
+    }
+
+    .emoji-rating span {
+      font-size: 2rem;
+      cursor: pointer;
+      margin: 0 0.25rem;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .feedback-buttons {
+      margin-top: 1rem;
+    }
+
+    .feedback-buttons button {
+      padding: 0.5rem 1rem;
+      margin-right: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .submit-btn {
+      background-color: #1abc9c;
+      color: white;
+    }
+
+    .cancel-btn {
+      background-color: grey;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Climate Action Now</h1>
+  </header>
+  <nav>
+     <a href="homepage.html"> Home </a>
+            <a href="volunteer.html"> Volunteer </a>
+            <a href=""> Stats </a>
+            <a href="user_profile.html"> Profile </a>
+            <a href="feedback.html"> Feedback </a>
+            <a href="sitemap.html"> Sitemap </a>
+            <a href="team.html"> Team </a>
+  </nav>
+
+  <main class="wrapper">
+    <h2>Volunteer Opportunities</h2>
+
+    <div class="dropdown">
+      <label for="filter">Sort by:</label>
+      <select id="filter">
+        <option>Most Popular</option>
+        <option>Newest</option>
+        <option>Nearby</option>
+      </select>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="images/cleanup.jpg" alt="Beach cleanup">
+        <h3>Coastal Cleanup</h3>
+        <p>Join local efforts to remove plastic waste from our beaches.</p>
+        <button>Sign Up</button>
+      </div>
+      <div class="card">
+        <img src="images/trees.jpg" alt="Tree planting">
+        <h3>Tree Planting</h3>
+        <p>Plant trees to restore green cover and fight climate change.</p>
+        <button>Sign Up</button>
+      </div>
+      <div class="card">
+        <img src="images/recycle.jpg" alt="Recycling">
+        <h3>Recycling Drive</h3>
+        <p>Help organize community recycling collections and awareness.</p>
+        <button>Sign Up</button>
+      </div>
+      <div class="card">
+        <img src="images/school.jpg" alt="School outreach">
+        <h3>School Outreach</h3>
+        <p>Educate students about sustainability and eco-practices.</p>
+        <button>Sign Up</button>
+      </div>
+    </div>
+
+    <div class="reviews">
+      <h2>Volunteer Reviews</h2>
+      <p><strong>9.5/10 Exceptional</strong> - Based on 1288 reviews</p>
+      <div class="review-card">
+        <h4>🌟🌟🌟🌟🌟 Amazing Experience!</h4>
+        <p>"I loved planting trees in the local park. It was fun and meaningful!" <a href="#">See More</a></p>
+        <p><em>- Ayesha, May 2025</em></p>
+      </div>
+      <div class="review-card">
+        <h4>🌟🌟🌟🌟 Great Initiative</h4>
+        <p>"Volunteering with the school outreach program was eye-opening." <a href="#">See More</a></p>
+        <p><em>- Tom, April 2025</em></p>
+      </div>
+    </div>
+
+    <div class="feedback-form">
+      <h2>Submit Your Feedback</h2>
+      <label for="emoji-rating">Your Rating:</label>
+      <div class="emoji-rating" id="emoji-rating">
+        <span>😠</span>
+        <span>😐</span>
+        <span>😊</span>
+        <span>😁</span>
+        <span>😍</span>
+      </div>
+      <label for="user-feedback">Your Review:</label>
+      <textarea id="user-feedback" rows="4" placeholder="Write your review here..."></textarea>
+      <div class="feedback-buttons">
+        <button class="submit-btn">Submit Feedback</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Climate Action Team — 
+      <a href="pageEditor_ST1.html">Sujaya</a> | 
+      <a href="pageEditor_ST2.html">Sandun</a> | 
+      <a href="pageEditor_ST3.html">Naveen</a> | 
+      <a href="pageEditor_ST4.html">Isurandi</a>
+    </p>
+  </footer>
+</body>
+</html>

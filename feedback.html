@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta char set ="UTF-8">
+    <title>Feedback-climate Action Now</title>
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="sytle.css">
+    <style>
+        form {
+            background:white;
+            padding:1.5 rem;
+            border-radius:10px;
+            box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+        }
+
+        fieldset {
+            border:2px solid #1abc9c;
+            padding: 1rem;
+            margin-bottom: 1.5 rem;
+            border-radius: 6px;
+        }
+
+        legend {
+            font-weight:bold;
+            padding:0 0.5rem;
+        }
+
+        label {
+            display:block;
+            margin-top: 1rem;
+        }
+
+        input,select,textarea {
+            width: 100%;
+            padding:0.5rem;
+            margin-top:0.25rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .emoji-rating span {
+            font-size: 2rem;
+            cursor: pointer;
+            margin-right: 0.3rem;
+        }
+
+        .form-buttons {
+            margin-top: 1.5rem;
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            margin-right: 1rem;
+            cursor:pointer;
+        }
+
+        .submit-btn {
+           background-color:#1abc9c;
+           color:white
+        }
+
+        .reset-btn {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Climate Action Now</h1>
+    </header>
+    <nav>
+         <a href="homepage.html"> Home </a>
+            <a href="volunteer.html"> Volunteer </a>
+            <a href=""> Stats </a>
+            <a href="user_profile.html"> Profile </a>
+            <a href="feedback.html"> Feedback </a>
+            <a href="sitemap.html"> Sitemap </a>
+            <a href="team.html"> Team </a>
+    </nav>
+
+    <main class="Wrapper">
+        <h2>We VAlue Your Feedback</h2>
+        <form>
+            <fieldset>
+                <legend>PErsonal Details</legend>
+                <lable for="name">Full Name:</lable>
+                <input type="text" id="name" name="name" required title="Please enter your full name">
+               
+                <lable for="email">Email Adress:</lable>
+                <input types="email"id ="eamil" name="email" required tittle="Enter a valid emial adress">
+
+                <label for="tel">phone number:</label>
+                <input type="tel" id ="tel" name="tel" pattern="[0-9+]+" titel="only digits and symbols allowed">
+
+                <label for="adress">Adress:</label>
+                <input types="adress" name="adress" rowa="3" maxlenght="100" placeholder="Enter your address..."></textarea>
+
+                <label for="dob">Date of vivit:</label>
+                <input type="date" id="dob" name="dob">
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Feedback Details</legend>
+
+                <label for="category">Feedback category:</label>
+                <select id="category" name="category">
+                    <option>Website</option>
+                    <option>Volunteering</option>
+                    <option>Education</option>
+                    <option>Events</option>
+                </select>
+
+                <label for="rating">Rate Us:</label>
+                <div class="emoji-rating">
+                    <spam>😍</spam>
+                    <spam>🙂</spam>
+                    <spam>😐</spam>
+                    <sapm>☹️</sapm>
+                    <spam>😠</spam>
+                </div>
+
+                <label for="feedback">Message:</label>
+                <textarea id="feedback" name="feedback" rows="4" maxlenght="200" placeholder="your thoughts..." required></textarea>
+
+                <label for="attach">Attach a file:</label>
+                <input type="file" id="attach" name="attach" accept="pdf,.jpg,.png">
+            </fieldset>
+
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">send Feedback</button>
+                <button type="reset"  class="reset-btn">Reset</button>
+            </div>
+        <footer>
+            <p>&copy; 2025 Cliamte Action Team -
+                <a href="pageEditor_ST1.html">Sadun</a> | 
+                <a href="pageEditor_ST2.html">Sujaya</a> | 
+                <a href="pageEditor_ST3.html">Naveen</a> | 
+                <a href="pageEditor_ST4.html">Isurandi</a>
+            </p>
+        </footer>
+    </main>
+</body>

@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+		header, footer {
+            background: rgb(114, 175, 114);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background: lightblue;
+            gap: 20px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: black;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .profile-card, .profile-about, .profile-skills, .profile-volunteering, .profile-availability, .profile-contact {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .skill-bar {
+            background-color: #ddd;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            background-color: #28a745;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 10px;
+            text-align: right;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #005a00;
+            color: white;
+        }
+        </style>
+    
+    </head>
+
+    <body>
+        <header>
+            <h1> Climate Action </h1>
+        </header>
+        <nav>
+             <a href="homepage.html"> Home </a>
+            <a href="volunteer.html"> Volunteer </a>
+            <a href=""> Stats </a>
+            <a href="user_profile.html"> Profile </a>
+            <a href="feedback.html"> Feedback </a>
+            <a href="sitemap.html"> Sitemap </a>
+            <a href="team.html"> Team </a>
+        </nav>
+
+        <main>
+		<section class="profile-card">
+            <img src="images/user.jpg" alt="User Avatar" class="avatar">
+            <h2>Imesha Isurandi</h2>
+            <h3>Climate Advocate</h3>
+        </section>
+
+        <section class="profile-about">
+            <h2>About Me</h2>
+            <p>I am committed to promoting awareness on climate action and motivating communities to take real steps towards sustainability.</p>
+        </section>
+
+        <section class="profile-skills">
+            <h2>Skills & Goals</h2>
+            <p>Project Management</p>
+            <div class="skill-bar"><div class="bar" style="width: 85%;">85%</div></div>
+
+            <p>Environmental Education</p>
+            <div class="skill-bar"><div class="bar" style="width: 75%;">75%</div></div>
+
+            <p>Team Leadership</p>
+            <div class="skill-bar"><div class="bar" style="width: 90%;">90%</div></div>
+        </section>
+
+        <section class="profile-volunteering">
+            <h2>UN Goals I Support</h2>
+            <ul>
+                <li><img src="images/tree.png" alt="Tree Planting" width="24"> Tree Planting Initiatives</li>
+                <li><img src="images/cleanup.png" alt="Beach Cleanup" width="24"> Coastal Cleanups</li>
+            </ul>
+        </section>
+
+        <section class="profile-availability">
+            <h2>Availability</h2>
+            <table>
+                <tr><th>Day</th><th>Time</th></tr>
+                <tr><td>Monday</td><td>9:00 AM - 12:00 PM</td></tr>
+                <tr><td>Wednesday</td><td>1:00 PM - 4:00 PM</td></tr>
+            </table>
+        </section>
+
+        <section class="profile-contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your message..." rows="5" required></textarea>
+                <button type="submit">Send</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+		
+
+
+        </main>
+
+        <footer>
+            <h3>This is Footer</h3>
+        </footer>
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sitemap</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    header, footer {
+      background: rgb(114, 175, 114);
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    nav {
+      background: lightblue;
+      gap: 20px;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: black;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .svg-container {
+      text-align: center;
+      margin-top: 30px;
+    }
+    svg {
+      max-width: 100%;
+      height: auto;
+    }
+    .node {
+      fill: lightgreen;
+      stroke: green;
+      stroke-width: 2;
+      cursor: pointer;
+      transition: fill 0.3s;
+    }
+    .node:hover {
+      fill: #66bb6a;
+    }
+    text {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      fill: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Climate Action</h1>
+  </header>
+
+  <nav>
+     <a href="homepage.html"> Home </a>
+            <a href="volunteer.html"> Volunteer </a>
+            <a href=""> Stats </a>
+            <a href="user_profile.html"> Profile </a>
+            <a href="feedback.html"> Feedback </a>
+            <a href="sitemap.html"> Sitemap </a>
+            <a href="team.html"> Team </a>
+  </nav>
+
+  <main>
+    <h2 style="text-align:center;">Website Sitemap</h2>
+    <div class="svg-container">
+      <svg width="800" height="400">
+        <!-- Home -->
+        <a href="homepage.html">
+          <rect class="node" x="350" y="20" width="100" height="40" rx="10" ry="10" />
+          <text x="370" y="45">Home</text>
+        </a>
+
+        <!-- Level 1 Pages -->
+        <a href="volunteer.html">
+          <rect class="node" x="100" y="100" width="100" height="40" rx="10" ry="10" />
+          <text x="115" y="125">Volunteer</text>
+        </a>
+
+        <a href="">
+          <rect class="node" x="250" y="100" width="100" height="40" rx="10" ry="10" />
+          <text x="275" y="125">Stats</text>
+        </a>
+
+        <a href="user_profile.html">
+          <rect class="node" x="400" y="100" width="100" height="40" rx="10" ry="10" />
+          <text x="425" y="125">Profile</text>
+        </a>
+
+        <a href="feedback.html">
+          <rect class="node" x="550" y="100" width="100" height="40" rx="10" ry="10" />
+          <text x="565" y="125">Feedback</text>
+        </a>
+
+        <!-- Level 2 -->
+        <a href="team.html">
+          <rect class="node" x="300" y="200" width="100" height="40" rx="10" ry="10" />
+          <text x="325" y="225">Team</text>
+        </a>
+
+        <a href="">
+          <rect class="node" x="450" y="200" width="130" height="40" rx="10" ry="10" />
+          <text x="460" y="225">Page Editor</text>
+        </a>
+
+        <!-- Lines -->
+        <line x1="400" y1="60" x2="150" y2="100" stroke="gray" />
+        <line x1="400" y1="60" x2="300" y2="100" stroke="gray" />
+        <line x1="400" y1="60" x2="450" y2="100" stroke="gray" />
+        <line x1="400" y1="60" x2="600" y2="100" stroke="gray" />
+        <line x1="450" y1="140" x2="350" y2="200" stroke="gray" />
+        <line x1="450" y1="140" x2="515" y2="200" stroke="gray" />
+      </svg>
+    </div>
+  </main>
+
+  <footer>
+    <p><a href="">Page Editor - ST4</a></p>
+  </footer>
+</body>
+</html>

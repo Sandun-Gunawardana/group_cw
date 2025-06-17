@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Climate Action Now - Splash</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Redirect to home page after 4 seconds -->
+  <meta http-equiv="refresh" content="4;url=homepage.html">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background: url('climate-bg.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 1rem;
+    }
+
+    .loader {
+      border: 6px solid rgba(255, 255, 255, 0.3);
+      border-top: 6px solid #00e6ac;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin: 1rem auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .members {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <img src="logo.png" alt="Climate Action Logo" class="logo">
+  <h1>Climate Action Now</h1>
+  <p>Working together for a cleaner, greener future.</p>
+  <div class="loader"></div>
+  <div class="members">
+    <p><strong>Team Members:</strong></p>
+    <p>Sadun, Sujaya, Naveen, Isurandi</p>
+  </div>
+</body>
+</html>
